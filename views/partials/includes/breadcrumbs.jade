@@ -1,0 +1,192 @@
+.bs-docs-section
+  .page-header
+    h1#breadcrumbs
+      | Breadcrumbs
+      small
+  p.lead Indicate the current page's location within a navigational hierarchy.
+  p
+    | Separators are automatically added in CSS through
+    code :before
+    | and
+    code content
+    | .
+  .bs-example
+    ol.breadcrumb
+      li.active Home
+    ol.breadcrumb
+      li
+        a(href='#') Home
+      li.active Library
+    ol.breadcrumb(style='margin-bottom: 5px;')
+      li
+        a(href='#') Home
+      li
+        a(href='#') Library
+      li.active Data
+  .highlight
+    pre.
+      
+//-
+   Pagination
+    /- ==== 
+.bs-docs-section
+  .page-header
+    h1#pagination Pagination
+  p.lead
+    | Provide pagination links for your site or app with the multi-page pagination component, or the simpler
+    a(href='#pagination-pager') pager alternative
+    | .
+  h2#pagination-default Default pagination
+  p
+    | Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.
+  .bs-example
+    ul.pagination
+      li
+        a(href='#') «
+      li
+        a(href='#') 1
+      li
+        a(href='#') 2
+      li
+        a(href='#') 3
+      li
+        a(href='#') 4
+      li
+        a(href='#') 5
+      li
+        a(href='#') »
+  .highlight
+    pre.
+      
+  h3 Disabled and active states
+  p
+    | Links are customizable for different circumstances. Use
+    code .disabled
+    | for unclickable links and
+    code .active
+    | to indicate the current page.
+  .bs-example
+    ul.pagination
+      li.disabled
+        a(href='#') «
+      li.active
+        a(href='#')
+          | 1
+          span.sr-only (current)
+      li
+        a(href='#') 2
+      li
+        a(href='#') 3
+      li
+        a(href='#') 4
+      li
+        a(href='#') 5
+      li
+        a(href='#') »
+  .highlight
+    pre.
+      
+  p
+    | You can optionally swap out active or disabled anchors for
+    code <span>
+    | to remove click functionality while retaining intended styles.
+  .highlight
+    pre.
+      
+  h3 Sizing
+  p
+    | Fancy larger or smaller pagination? Add
+    code .pagination-lg
+    | or
+    code .pagination-sm
+    | for additional sizes.
+  .bs-example
+    div
+      ul.pagination.pagination-lg
+        li
+          a(href='#') «
+        li
+          a(href='#') 1
+        li
+          a(href='#') 2
+        li
+          a(href='#') 3
+        li
+          a(href='#') 4
+        li
+          a(href='#') 5
+        li
+          a(href='#') »
+    div
+      ul.pagination
+        li
+          a(href='#') «
+        li
+          a(href='#') 1
+        li
+          a(href='#') 2
+        li
+          a(href='#') 3
+        li
+          a(href='#') 4
+        li
+          a(href='#') 5
+        li
+          a(href='#') »
+    div
+      ul.pagination.pagination-sm
+        li
+          a(href='#') «
+        li
+          a(href='#') 1
+        li
+          a(href='#') 2
+        li
+          a(href='#') 3
+        li
+          a(href='#') 4
+        li
+          a(href='#') 5
+        li
+          a(href='#') »
+  .highlight
+    pre.
+      
+  h2#pagination-pager Pager
+  p
+    | Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.
+  h3 Default example
+  p By default, the pager centers links.
+  .bs-example
+    ul.pager
+      li
+        a(href='#') Previous
+      li
+        a(href='#') Next
+  .highlight
+    pre.
+      
+  h3 Aligned links
+  p Alternatively, you can align each link to the sides:
+  .bs-example
+    ul.pager
+      li.previous
+        a(href='#') ← Older
+      li.next
+        a(href='#') Newer →
+  .highlight
+    pre.
+      
+  h3 Optional disabled state
+  p
+    | Pager links also use the general
+    code .disabled
+    | utility class from the pagination.
+  .bs-example
+    ul.pager
+      li.previous.disabled
+        a(href='#') ← Older
+      li.next
+        a(href='#') Newer →
+  .highlight
+    pre.

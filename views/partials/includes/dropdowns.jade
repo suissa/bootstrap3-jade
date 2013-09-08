@@ -1,0 +1,89 @@
+.bs-docs-section
+  .page-header
+    h1#dropdowns Dropdowns
+  p.lead
+    | Toggleable, contextual menu for displaying lists of links. Made interactive with the
+    a(href='../javascript/#dropdowns') dropdown JavaScript plugin
+    | .
+  h3#dropdowns-example Example
+  p
+    | Wrap the dropdown's trigger and the dropdown menu within
+    code .dropdown
+    | , or another element that declares
+    code position: relative;
+    | . Then add the menu's HTML.
+  .bs-example
+    .dropdown.clearfix
+      a#dropdownMenu1.sr-only.dropdown-toggle(href='#', role='button', data-toggle='dropdown')
+        | Dropdown
+        b.caret
+      ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Action
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Another action
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Something else here
+        li.divider(role='presentation')
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Separated link
+  //-
+     /example 
+  .highlight
+    pre.
+      
+  h3#dropdowns-alignment Aligninment options
+  p
+    | Add
+    code .pull-right
+    | to a
+    code .dropdown-menu
+    | to right align the dropdown menu.
+  .highlight
+    pre.
+      
+  h3#dropdowns-headers Headers
+  p Add a header to label sections of actions in any dropdown menu.
+  .bs-example
+    .dropdown.clearfix
+      a#dropdownMenu2.sr-only.dropdown-toggle(href='#', role='button', data-toggle='dropdown')
+        | Dropdown
+        b.caret
+      ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu2')
+        li.dropdown-header(role='presentation') Dropdown header
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Action
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Another action
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Something else here
+        li.divider(role='presentation')
+        li.dropdown-header(role='presentation') Dropdown header
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Separated link
+  //-
+     /example 
+  .highlight
+    pre.
+      
+  h3#dropdowns-disabled Disabled menu items
+  p
+    | Add
+    code .disabled
+    | to a
+    code <li>
+    | in the dropdown to disable the link.
+  .bs-example
+    .dropdown.clearfix
+      a#dropdownMenu3.sr-only.dropdown-toggle(href='#', role='button', data-toggle='dropdown')
+        | Dropdown
+        b.caret
+      ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu3')
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Regular link
+        li.disabled(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Disabled link
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#') Another link
+  .highlight
+    pre.

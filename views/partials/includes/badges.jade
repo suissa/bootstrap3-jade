@@ -1,0 +1,54 @@
+.bs-docs-section
+  .page-header
+    h1#badges Badges
+  p.lead
+    | Easily highlight new or unread items by adding a
+    code <span class="badge">
+    | to links, Bootstrap navs, and more.
+  .bs-example
+    a(href='#')
+      | Inbox
+      span.badge 42
+  .highlight
+    pre.
+      
+  h4 Self collapsing
+  p
+    | When there are no new or unread items, badges will simply collapse (via CSS's
+    code :empty
+    | selector) provided no content exists within.
+  .bs-callout.bs-callout-danger
+    h4 Cross-browser compatibility
+    p
+      | Badges won't self collapse in Internet Explorer 8 because it lacks support for the
+      code :empty
+      | selector.
+  h4 Adapts to active nav states
+  p
+    | Built-in styles are included for placing badges in active states in pill and list navigations.
+  .bs-example
+    ul.nav.nav-pills
+      li.active
+        a(href='#')
+          | Home
+          span.badge 42
+      li
+        a(href='#') Profile
+      li
+        a(href='#')
+          | Messages
+          span.badge 3
+    br
+    ul.nav.nav-pills.nav-stacked(style='max-width: 260px;')
+      li.active
+        a(href='#')
+          span.badge.pull-right 42
+          | Home
+      li
+        a(href='#') Profile
+      li
+        a(href='#')
+          span.badge.pull-right 3
+          | Messages
+  .highlight
+    pre.

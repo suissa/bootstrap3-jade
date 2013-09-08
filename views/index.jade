@@ -1,0 +1,157 @@
+extends layout
+
+block body               
+  //- .container-fluid   
+    //-
+     Docs master nav 
+  include partials/includes/header
+  //-
+     Docs page layout 
+  //- #content.bs-header
+  //-   .container
+  //-     h1 Components
+  //-     p
+  //-       | Over a dozen reusable components built to provide iconography, dropdowns, navigation, alerts, popovers, and much more.
+  //-     #carbonads-container
+  //-       .carbonad
+  //-         #azcarbon
+  //-         script
+  //-           var z = document.createElement("script"); z.async = true; z.src = "http://-engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);
+  //-
+     Callout for the old docs link 
+  .container.bs-docs-container
+    .row
+      .col-md-3
+        .bs-sidebar.hidden-print(role='complementary')
+          include partials/includes/menu
+      .col-md-9(role='main')
+        include partials/includes/glyphicons
+              
+        //-
+           Dropdowns
+            /- /- ==== 
+        include partials/includes/dropdowns
+              
+        //-
+           Button Groups
+            /- ==== 
+        include partials/includes/button-groups
+        
+              
+        //-
+           Split button dropdowns
+            /- ====
+        include partials/includes/button-dropdowns 
+        
+              
+        //-
+           Input groups
+            /- ==== 
+        include partials/includes/input-groups 
+        
+              
+        //-
+           Navs
+            /- ==== 
+        include partials/includes/navs 
+        
+              
+        //-
+           Navbar
+            /- ==== 
+        //- include partials/includes/navbar
+        
+              
+        //-
+           Breadcrumbs
+            /- ==== 
+        include partials/includes/breadcrumbs
+        
+              
+        //-
+           Labels
+            /- ==== 
+        include partials/includes/labels
+        
+              
+        //-
+           Badges
+            /- ==== 
+        include partials/includes/badges
+        
+              
+        //-
+           Jumbotron
+            /- ==== 
+        include partials/includes/jumbotron
+        
+              
+        //-
+           Page header
+            /- ==== 
+        include partials/includes/page-header
+        
+              
+        //-
+           Thumbnails
+            /- ==== 
+        include partials/includes/thumbnails
+        
+              
+        //-
+           Alerts
+            /- ==== 
+        include partials/includes/alerts
+        
+              
+        //-
+           Progress bars
+            /- ==== 
+        include partials/includes/progress
+        
+              
+        //-
+           Media object
+            /- ==== 
+        include partials/includes/media
+        
+              
+        //-
+           List group
+            /- ==== 
+        include partials/includes/list-group
+        
+              
+        //-
+           Panels
+            /- ==== 
+        include partials/includes/panels
+        
+              
+        //-
+           Wells
+            /- ==== 
+        include partials/includes/wells
+          
+                
+
+
+
+
+
+  script(src='js/lib/angular/angular.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')
+  script(src='js/lib/jquery/jquery-1.9.1.min.js')
+  script(src='bootstrap/js/bootstrap.min.js')
+
+  //- script(src='bootstrap/js/bootstrap.min.js')
+
+  //- script(src='js/jquery.js')
+  //- script(src='bootstrap/js/bootstrap.js')
+  script(src='http://platform.twitter.com/widgets.js')
+  script(src='js/holder.js')
+  script(src='js/application.js')

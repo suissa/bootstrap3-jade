@@ -1,0 +1,172 @@
+.bs-docs-section
+  .page-header
+    h1#btn-groups Button groups
+  p.lead
+    | Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with
+    a(href='../javascript/#buttons') our buttons plugin
+    | .
+  .bs-callout.bs-callout-info
+    h4 Tooltips & popovers in button groups require special setting
+    p
+      | When using tooltips or popovers on elements within a
+      code .btn-group
+      | , you'll have to specify the option
+      code container: 'body'
+      | to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
+  h3#btn-groups-single Basic example
+  p
+    | Wrap a series of buttons with
+    code .btn
+    | in
+    code .btn-group
+    | .
+  .bs-example
+    .btn-group(style='margin: 9px 0 5px;')
+      button.btn.btn-default(type='button') Left
+      button.btn.btn-default(type='button') Middle
+      button.btn.btn-default(type='button') Right
+  .highlight
+    pre.
+      
+  h3#btn-groups-toolbar Button toolbar
+  p
+    | Combine sets of
+    code <div class="btn-group">
+    | into a
+    code <div class="btn-toolbar">
+    | for more complex components.
+  .bs-example
+    .btn-toolbar(style='margin: 0;')
+      .btn-group
+        button.btn.btn-default(type='button') 1
+        button.btn.btn-default(type='button') 2
+        button.btn.btn-default(type='button') 3
+        button.btn.btn-default(type='button') 4
+      .btn-group
+        button.btn.btn-default(type='button') 5
+        button.btn.btn-default(type='button') 6
+        button.btn.btn-default(type='button') 7
+      .btn-group
+        button.btn.btn-default(type='button') 8
+  .highlight
+    pre.
+      
+  h3#btn-groups-sizing Sizing
+  p
+    | Instead of applying button sizing classes to every button in a group, just add
+    code .btn-group-*
+    | to the
+    code .btn-group
+    | .
+  .bs-example
+    .btn-toolbar
+      .btn-group.btn-group-lg
+        button.btn.btn-default(type='button') Left
+        button.btn.btn-default(type='button') Middle
+        button.btn.btn-default(type='button') Right
+    .btn-toolbar
+      .btn-group
+        button.btn.btn-default(type='button') Left
+        button.btn.btn-default(type='button') Middle
+        button.btn.btn-default(type='button') Right
+    .btn-toolbar
+      .btn-group.btn-group-sm
+        button.btn.btn-default(type='button') Left
+        button.btn.btn-default(type='button') Middle
+        button.btn.btn-default(type='button') Right
+    .btn-toolbar
+      .btn-group.btn-group-xs
+        button.btn.btn-default(type='button') Left
+        button.btn.btn-default(type='button') Middle
+        button.btn.btn-default(type='button') Right
+  .highlight
+    pre.
+      
+  h3#btn-groups-nested Nesting
+  p
+    | Place a
+    code .btn-group
+    | within another
+    code .btn-group
+    | when you want dropdown menus mixed with a series of buttons.
+  .bs-example
+    .btn-group
+      button.btn.btn-default(type='button') 1
+      button.btn.btn-default(type='button') 2
+      .btn-group
+        button#btnGroupDrop1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role='menu', aria-labelledby='btnGroupDrop1')
+          li
+            a(href='#') Dropdown link
+          li
+            a(href='#') Dropdown link
+  .highlight
+    pre.
+      
+  h3#btn-groups-vertical Vertical variation
+  p Make a set of buttons appear vertically stacked rather than horizontally.
+  .bs-example
+    .btn-group-vertical
+      button.btn.btn-default(type='button') Button
+      button.btn.btn-default(type='button') Button
+      .btn-group
+        button#btnGroupVerticalDrop1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop1')
+          li
+            a(href='#') Dropdown link
+          li
+            a(href='#') Dropdown link
+      button.btn.btn-default(type='button') Button
+      button.btn.btn-default(type='button') Button
+      .btn-group
+        button#btnGroupVerticalDrop2.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop2')
+          li
+            a(href='#') Dropdown link
+          li
+            a(href='#') Dropdown link
+      .btn-group
+        button#btnGroupVerticalDrop3.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop3')
+          li
+            a(href='#') Dropdown link
+          li
+            a(href='#') Dropdown link
+      .btn-group
+        button#btnGroupVerticalDrop4.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role='menu', aria-labelledby='btnGroupVerticalDrop4')
+          li
+            a(href='#') Dropdown link
+          li
+            a(href='#') Dropdown link
+  .highlight
+    pre.
+      
+  h3#btn-groups-justified Justified link variation
+  p
+    | Make a group of buttons stretch at the same size to span the entire width of its parent.
+  .bs-callout.bs-callout-warning
+    h4 Element-specific usage
+    p
+      | This only works with
+      code <a>
+      | elements as the
+      code <button>
+      | doesn't pick up these styles.
+  .bs-example
+    .btn-group.btn-group-justified
+      a.btn.btn-default(href='#') Left
+      a.btn.btn-default(href='#') Middle
+      a.btn.btn-default(href='#') Right
+  .highlight
+    pre.

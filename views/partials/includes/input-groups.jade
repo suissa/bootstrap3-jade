@@ -1,0 +1,226 @@
+.bs-docs-section
+  .page-header
+    h1#input-groups Input groups
+  p.lead
+    | Extend form controls by adding text or buttons before, after, or on both sides of any text-based input. Use
+    code .input-group
+    | with an
+    code .input-group-addon
+    | to prepend or append elements to a
+    code .form-control
+    | .
+  .bs-callout.bs-callout-danger
+    h4 Cross-browser compatibility
+    p
+      | Avoid using
+      code <select>
+      | elements here as they cannot be fully styled in WebKit browsers.
+  .bs-callout.bs-callout-info
+    h4 Tooltips & popovers in input groups require special setting
+    p
+      | When using tooltips or popovers on elements within an
+      code .input-group
+      | , you'll have to specify the option
+      code container: 'body'
+      | to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
+  h2#input-groups-basic Basic example
+  form.bs-example.bs-example-form(role='form')
+    .input-group
+      span.input-group-addon @
+      input.form-control(type='text', placeholder='Username')
+    br
+    .input-group
+      input.form-control(type='text')
+      span.input-group-addon .00
+    br
+    .input-group
+      span.input-group-addon $
+      input.form-control(type='text')
+      span.input-group-addon .00
+  .highlight
+    pre.
+      
+  h2#input-groups-sizing Sizing
+  p
+    | Add the relative form sizing classes to the
+    code .input-group
+    | itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
+  form.bs-example.bs-example-form(role='form')
+    .input-group.input-group-lg
+      span.input-group-addon @
+      input.form-control(type='text', placeholder='Username')
+    br
+    .input-group
+      span.input-group-addon @
+      input.form-control(type='text', placeholder='Username')
+    br
+    .input-group.input-group-sm
+      span.input-group-addon @
+      input.form-control(type='text', placeholder='Username')
+  .highlight
+    pre.
+      
+  h2#input-groups-checkboxes-radios Checkboxes and radio addons
+  p
+    | Place any checkbox or radio option within an input group's addon instead of text.
+  form.bs-example.bs-example-form
+    .row
+      .col-lg-6
+        .input-group
+          span.input-group-addon
+            input(type='checkbox')
+          input.form-control(type='text')
+        //-
+           /input-group 
+      //-
+         /.col-lg-6 
+      .col-lg-6
+        .input-group
+          span.input-group-addon
+            input(type='radio')
+          input.form-control(type='text')
+        //-
+           /input-group 
+      //-
+         /.col-lg-6 
+    //-
+       /.row 
+  .highlight
+    pre.
+      
+  h2#input-groups-buttons Button addons
+  p
+    | Buttons in input groups are a bit different and require one extra level of nesting. Instead of
+    code .input-group-addon
+    | , you'll need to use
+    code .input-group-btn
+    | to wrap the buttons. This is required due to default browser styles that cannot be overridden.
+  form.bs-example.bs-example-form
+    .row
+      .col-lg-6
+        .input-group
+          span.input-group-btn
+            button.btn.btn-default(type='button') Go!
+          input.form-control(type='text')
+        //-
+           /input-group 
+      //-
+         /.col-lg-6 
+      .col-lg-6
+        .input-group
+          input.form-control(type='text')
+          span.input-group-btn
+            button.btn.btn-default(type='button') Go!
+        //-
+           /input-group 
+      //-
+         /.col-lg-6 
+    //-
+       /.row 
+  .highlight
+    pre.
+      
+  h2#input-groups-buttons-dropdowns Buttons with dropdowns
+  p
+  form.bs-example.bs-example-form(role='form')
+    .row
+      .col-lg-6
+        .input-group
+          .input-group-btn
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          //-
+             /btn-group 
+          input.form-control(type='text')
+        //-
+           /input-group 
+      //-
+         /.col-lg-6 
+      .col-lg-6
+        .input-group
+          input.form-control(type='text')
+          .input-group-btn
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Action
+              span.caret
+            ul.dropdown-menu.pull-right(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          //-
+             /btn-group 
+        //-
+           /input-group 
+      //-
+         /.col-lg-6 
+    //-
+       /.row 
+  .highlight
+    pre.
+      
+  h2#input-groups-buttons-segmented Segmented buttons
+  form.bs-example.bs-example-form(role='form')
+    .row
+      .col-lg-6
+        .input-group
+          .input-group-btn
+            button.btn.btn-default(type='button', tabindex='-1') Action
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', tabindex='-1')
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+          input.form-control(type='text')
+        //-
+           /.input-group 
+      //-
+         /.col-lg-6 
+      .col-lg-6
+        .input-group
+          input.form-control(type='text')
+          .input-group-btn
+            button.btn.btn-default(type='button', tabindex='-1') Action
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', tabindex='-1')
+              span.caret
+            ul.dropdown-menu.pull-right(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li.divider
+              li
+                a(href='#') Separated link
+        //-
+           /.input-group 
+      //-
+         /.col-lg-6 
+    //-
+       /.row 
+  .highlight
+    pre.

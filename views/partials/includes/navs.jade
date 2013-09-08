@@ -1,0 +1,158 @@
+.bs-docs-section
+  .page-header
+    h1#nav Navs
+  p.lead
+    | Navs available in Bootstrap have shared markup, starting with the base
+    code .nav
+    | class, as well as shared states. Swap modifier classes to switch between each style.
+  h2#nav-tabs Tabs
+  p
+    | Note the
+    code .nav-tabs
+    | class requires the
+    code .nav
+    | base class.
+  .bs-example
+    ul.nav.nav-tabs
+      li.active
+        a(href='#') Home
+      li
+        a(href='#') Profile
+      li
+        a(href='#') Messages
+  .highlight
+    pre.
+      
+  h2#nav-pills Pills
+  p
+    | Take that same HTML, but use
+    code .nav-pills
+    | instead:
+  .bs-example
+    ul.nav.nav-pills
+      li.active
+        a(href='#') Home
+      li
+        a(href='#') Profile
+      li
+        a(href='#') Messages
+  .highlight
+    pre.
+      
+  p
+    | Pills are also vertically stackable. Just add
+    code .nav-stacked
+    | .
+  .bs-example
+    ul.nav.nav-pills.nav-stacked(style='max-width: 300px;')
+      li.active
+        a(href='#') Home
+      li
+        a(href='#') Profile
+      li
+        a(href='#') Messages
+  .highlight
+    pre.
+      
+  h2#nav-justified Justified
+  p
+    | Easily make tabs or pills equal widths of their parent with
+    code .nav-justified
+    | .
+  .bs-example
+    ul.nav.nav-tabs.nav-justified
+      li.active
+        a(href='#') Home
+      li
+        a(href='#') Profile
+      li
+        a(href='#') Messages
+    br
+    ul.nav.nav-pills.nav-justified
+      li.active
+        a(href='#') Home
+      li
+        a(href='#') Profile
+      li
+        a(href='#') Messages
+  .highlight
+    pre.
+      
+  h2#nav-disabled-links Disabled links
+  p
+    | For any nav component (tabs, pills, or list), add
+    code .disabled
+    | for
+    strong gray links and no hover effects
+    | .
+  .bs-callout.bs-callout-warning
+    h4 Link functionality not impacted
+    p
+      | This class will only change the
+      code <a>
+      | 's appearance, not its functionality. Use custom JavaScript to disable links here.
+  .bs-example
+    ul.nav.nav-pills
+      li
+        a(href='#') Clickable link
+      li
+        a(href='#') Clickable link
+      li.disabled
+        a(href='#') Disabled link
+  .highlight
+    pre.
+      
+  h2#nav-dropdowns Using dropdowns
+  p
+    | Add dropdown menus with a little extra HTML and the
+    a(href='../javascript/#dropdowns') dropdowns JavaScript plugin
+    | .
+  h3 Tabs with dropdowns
+  .bs-example
+    ul.nav.nav-tabs
+      li.active
+        a(href='#') Home
+      li
+        a(href='#') Help
+      li.dropdown
+        a.dropdown-toggle(data-toggle='dropdown', href='#')
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role='menu')
+          li
+            a(href='#') Action
+          li
+            a(href='#') Another action
+          li
+            a(href='#') Something else here
+          li.divider
+          li
+            a(href='#') Separated link
+  .highlight
+    pre.
+      
+  h3 Pills with dropdowns
+  .bs-example
+    ul.nav.nav-pills
+      li.active
+        a(href='#') Home
+      li
+        a(href='#') Help
+      li.dropdown
+        a.dropdown-toggle(data-toggle='dropdown', href='#')
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role='menu')
+          li
+            a(href='#') Action
+          li
+            a(href='#') Another action
+          li
+            a(href='#') Something else here
+          li.divider
+          li
+            a(href='#') Separated link
+  //-
+     /example 
+  .highlight
+    pre.

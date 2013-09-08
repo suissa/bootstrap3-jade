@@ -1,0 +1,324 @@
+.bs-docs-section
+  .page-header
+    h1#navbar Navbar
+  h2#navbar-default Default navbar
+  p
+    | Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.
+  .bs-callout.bs-callout-info
+    h4 Customize the collapsing point
+    p
+      | Depending on the content in your navbar, you might need to change the point at which your navbar switches between collapsed and horizontal mode. Customize the
+      code @grid-float-breakpoint
+      | variable or add your own media query.
+  .bs-example
+    nav.navbar.navbar-default(role='navigation')
+      //-
+         Brand and toggle get grouped for better mobile display 
+      //- .navbar-header
+      //-   button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+      //-     span.sr-only Toggle navigation
+      //-     span.icon-bar
+      //-     span.icon-bar
+      //-     span.icon-bar
+      //-   a.navbar-brand(href='#') Brand
+      //-
+         Collect the nav links, forms, and other content for toggling 
+      .collapse.navbar-collapse.navbar-ex1-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Link
+          li
+            a(href='#') Link
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | Dropdown
+              b.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li
+                a(href='#') Separated link
+              li
+                a(href='#') One more separated link
+        form.navbar-form.navbar-left(role='search')
+          .form-group
+            input.form-control(type='text', placeholder='Search')
+          button.btn.btn-default(type='submit') Submit
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='#') Link
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | Dropdown
+              b.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='#') Action
+              li
+                a(href='#') Another action
+              li
+                a(href='#') Something else here
+              li
+                a(href='#') Separated link
+      //-
+         /.navbar-collapse 
+  .highlight
+    pre.
+      
+  .bs-callout.bs-callout-danger
+    h4 Plugin dependency
+    p
+      | The responsive navbar requires the
+      a(href='../javascript/#collapse') collapse plugin
+      | to be included in your version of Bootstrap.
+  .bs-callout.bs-callout-warning
+    h4 Make navbars accessible
+    p
+      | Be sure to add a
+      code role="navigation"
+      | to every navbar to help with accessibility.
+  h2#navbar-buttons Buttons
+  p
+    | For buttons not residing in a
+    code <form>
+    | , add this class to vertically center buttons within a navbar.
+  .bs-example
+    nav.navbar.navbar-default(role='navigation')
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex2-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') Brand
+      .collapse.navbar-collapse.navbar-ex2-collapse
+        button.btn.btn-default.navbar-btn(type='button') Sign in
+  .highlight
+    pre.
+      
+  h2#navbar-text Text
+  p
+    | Wrap strings of text in an element with
+    code .navbar-text
+    | , usually on a
+    code <p>
+    | tag for proper leading and color.
+  .bs-example
+    nav.navbar.navbar-default(role='navigation')
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex3-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') Brand
+      .collapse.navbar-collapse.navbar-ex3-collapse
+        p.navbar-text Signed in as Mark Otto
+  .highlight
+    pre.
+      
+  h2#navbar-links Non-nav links
+  p
+    | For folks using standard links that are not within the regular navbar navigation component, use the
+    code .navbar-link
+    | class to add the proper colors for the default and inverse navbar options.
+  .bs-example
+    nav.navbar.navbar-default(role='navigation')
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex4-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') Brand
+      .collapse.navbar-collapse.navbar-ex4-collapse
+        p.navbar-text.pull-right
+          | Signed in as
+          a.navbar-link(href='#') Mark Otto
+  .highlight
+    pre.
+      
+  h2#navbar-component-alignment Component alignment
+  p
+    | Align nav links, forms, buttons, or text, using the
+    code .navbar-left
+    | or
+    code .navbar-right
+    | utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate
+    code <ul>
+    | with the respective utility class applied.
+  p
+    | These classes are mixin-ed versions of
+    code .pull-left
+    | and
+    code .pull-right
+    | , but they're scoped to media queries for easier handling of navbar components across device sizes.
+  h2#navbar-fixed-top Fixed to top
+  p
+    | Add
+    code .navbar-fixed-top
+    | .
+  .bs-example.bs-navbar-top-example
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      //-
+         Brand and toggle get grouped for better mobile display 
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex5-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') Brand
+      //-
+         Collect the nav links, forms, and other content for toggling 
+      .collapse.navbar-collapse.navbar-ex5-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Link
+          li
+            a(href='#') Link
+      //-
+         /.navbar-collapse 
+  //-
+     /example 
+  .highlight
+    pre.
+      
+  .bs-callout.bs-callout-danger
+    h4 Body padding required
+    p
+      | The fixed navbar will overlay your other content, unless you add
+      code padding
+      | to the top of the
+      code <body>
+      | . Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.
+    .highlight
+      pre.
+        
+    p
+      | Make sure to include this
+      strong after
+      | the core Bootstrap CSS.
+  h2#navbar-fixed-bottom Fixed to bottom
+  p
+    | Add
+    code .navbar-fixed-bottom
+    | instead.
+  .bs-example.bs-navbar-bottom-example
+    nav.navbar.navbar-default.navbar-fixed-bottom(role='navigation')
+      //-
+         Brand and toggle get grouped for better mobile display 
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex6-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') Brand
+      //-
+         Collect the nav links, forms, and other content for toggling 
+      .collapse.navbar-collapse.navbar-ex6-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Link
+          li
+            a(href='#') Link
+      //-
+         /.navbar-collapse 
+  //-
+     /example 
+  .highlight
+    pre.
+      
+  .bs-callout.bs-callout-danger
+    h4 Body padding required
+    p
+      | The fixed navbar will overlay your other content, unless you add
+      code padding
+      | to the bottom of the
+      code <body>
+      | . Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.
+    .highlight
+      pre.
+        
+    p
+      | Make sure to include this
+      strong after
+      | the core Bootstrap CSS.
+  h2#navbar-static-top Static top
+  p
+    | Create a full-width navbar that scrolls away with the page by adding
+    code .navbar-static-top
+    | . Unlike the
+    code .navbar-fixed-*
+    | classes, you do not need to change any padding on the
+    code body
+    | .
+  .bs-example.bs-navbar-top-example
+    nav.navbar.navbar-default.navbar-static-top(role='navigation')
+      //-
+         Brand and toggle get grouped for better mobile display 
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex7-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') Brand
+      //-
+         Collect the nav links, forms, and other content for toggling 
+      .collapse.navbar-collapse.navbar-ex7-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Link
+          li
+            a(href='#') Link
+      //-
+         /.navbar-collapse 
+  //-
+     /example 
+  .highlight
+    pre.
+      
+  h2#navbar-inverted Inverted navbar
+  p
+    | Modify the look of the navbar by adding
+    code .navbar-inverse
+    | .
+  .bs-example
+    nav.navbar.navbar-inverse(role='navigation')
+      //-
+         Brand and toggle get grouped for better mobile display 
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex8-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') Brand
+      //-
+         Collect the nav links, forms, and other content for toggling 
+      .collapse.navbar-collapse.navbar-ex8-collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Link
+          li
+            a(href='#') Link
+      //-
+         /.navbar-collapse 
+  //-
+     /example 
+  .highlight
+    pre.

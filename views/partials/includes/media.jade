@@ -1,0 +1,76 @@
+.bs-docs-section
+  .page-header
+    h1#media Media object
+  p.lead
+    | Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.
+  h3#media-default Default media
+  p
+    | The default media allow to float a media object (images, video, audio) to the left or right of a content block.
+  .bs-example
+    .media
+      a.pull-left(href='#')
+        img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+      .media-body
+        h4.media-heading Media heading
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    .media
+      a.pull-left(href='#')
+        img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+      .media-body
+        h4.media-heading Media heading
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        .media
+          a.pull-left(href='#')
+            img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+          .media-body
+            h4.media-heading Media heading
+            | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  //-
+     /.bs-example 
+  .highlight
+    pre.
+      
+  h3#media-list Media list
+  p
+    | With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).
+  .bs-example
+    ul.media-list
+      li.media
+        a.pull-left(href='#')
+          img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+        .media-body
+          h4.media-heading Media heading
+          p
+            | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          //-
+             Nested media object 
+          .media
+            a.pull-left(href='#')
+              img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+            .media-body
+              h4.media-heading Nested media heading
+              | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              //-
+                 Nested media object 
+              .media
+                a.pull-left(href='#')
+                  img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+                .media-body
+                  h4.media-heading Nested media heading
+                  | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          //-
+             Nested media object 
+          .media
+            a.pull-left(href='#')
+              img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+            .media-body
+              h4.media-heading Nested media heading
+              | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+      li.media
+        a.pull-right(href='#')
+          img.media-object(data-src='holder.js/64x64', alt='Generic placeholder image', src='data:image/png;base64,')
+        .media-body
+          h4.media-heading Media heading
+          | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  .highlight
+    pre.

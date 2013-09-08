@@ -1,0 +1,189 @@
+.bs-docs-section
+  .page-header
+    h1#panels Panels
+  p.lead
+    | While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.
+  h3#panels-basic Basic example
+  p
+    | By default, all the
+    code .panel
+    | does is apply some basic border and padding to contain some content.
+  .bs-example
+    .panel.panel-default
+      .panel-body
+        | Basic panel example
+  .highlight
+    pre.
+      
+  h3#panels-heading Panel with heading
+  p
+    | Easily add a heading container to your panel with
+    code .panel-heading
+    | . You may also include any
+    code <h1>
+    | -
+    code <h6>
+    | with a
+    code .panel-title
+    | class to add a pre-styled heading.
+  .bs-example
+    .panel.panel-default
+      .panel-heading Panel heading without title
+      .panel-body
+        | Panel content
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title Panel title
+      .panel-body
+        | Panel content
+  .highlight
+    pre.
+      
+  h3#panels-footer Panel with footer
+  p
+    | Wrap buttons or secondary text in
+    code .panel-footer
+    | . Note that panel footers
+    strong do not
+    | inherit colors and borders when using contextual variations as they are not meant to be in the foreground.
+  .bs-example
+    .panel.panel-default
+      .panel-body
+        | Panel content
+      .panel-footer Panel footer
+  .highlight
+    pre.
+      
+  h3#panels-alternatives Contextual alternatives
+  p
+    | Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.
+  .bs-example
+    .panel.panel-primary
+      .panel-heading
+        h3.panel-title Panel title
+      .panel-body
+        | Panel content
+    .panel.panel-success
+      .panel-heading
+        h3.panel-title Panel title
+      .panel-body
+        | Panel content
+    .panel.panel-info
+      .panel-heading
+        h3.panel-title Panel title
+      .panel-body
+        | Panel content
+    .panel.panel-warning
+      .panel-heading
+        h3.panel-title Panel title
+      .panel-body
+        | Panel content
+    .panel.panel-danger
+      .panel-heading
+        h3.panel-title Panel title
+      .panel-body
+        | Panel content
+  .highlight
+    pre.
+      
+  h3#panels-tables With tables
+  p
+    | Add any non-bordered
+    code .table
+    | within a panel for a seamless design. If there is a
+    code .panel-body
+    | , we add an extra border to the top of the table for separation.
+  .bs-example
+    .panel.panel-default
+      //-
+         Default panel contents 
+      .panel-heading Panel heading
+      .panel-body
+        p
+          | Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      //-
+         Table 
+      table.table
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Username
+        tbody
+          tr
+            td 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            td 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            td 3
+            td Larry
+            td the Bird
+            td @twitter
+  .highlight
+    pre.
+      
+  p
+    | If there is no panel body, the component moves from panel header to table without interruption.
+  .bs-example
+    .panel.panel-default
+      //-
+         Default panel contents 
+      .panel-heading Panel heading
+      //-
+         Table 
+      table.table
+        thead
+          tr
+            th #
+            th First Name
+            th Last Name
+            th Username
+        tbody
+          tr
+            td 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            td 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            td 3
+            td Larry
+            td the Bird
+            td @twitter
+  .highlight
+    pre.
+      
+  h3#panels-list-group With list groups
+  p
+    | Easily include full-width
+    a(href='#list-group') list groups
+    | within any panel.
+  .bs-example
+    .panel.panel-default
+      //-
+         Default panel contents 
+      .panel-heading Panel heading
+      .panel-body
+        p
+          | Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      //-
+         List group 
+      ul.list-group
+        li.list-group-item Cras justo odio
+        li.list-group-item Dapibus ac facilisis in
+        li.list-group-item Morbi leo risus
+        li.list-group-item Porta ac consectetur ac
+        li.list-group-item Vestibulum at eros
+  .highlight
+    pre.
